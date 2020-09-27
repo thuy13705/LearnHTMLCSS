@@ -1,0 +1,78 @@
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+        
+        div.top {
+            display: flex;
+            background-image: url(../images/page-top-bg.jpg);
+            height: 230px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        div.top .button-about {
+            background-color: deeppink;
+            border-radius: 4%;
+        }
+        
+        div.top .button-about h1 {
+            padding: 16px;
+            font-size: 40px;
+            color: white;
+        }
+        
+        .container-contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 15px;
+            margin: 0 10%;
+        }
+        
+        .text-cmt {
+            font-weight: bold;
+        }
+        
+        p.pink-text {
+            font-weight: bold;
+            color: deeppink;
+            text-decoration: underline;
+        }
+        
+        div.container-icon {
+            display: flex;
+            flex-direction: row;
+            color: rgba(0, 0, 0, .6);
+        }
+        
+        .container-icon i {
+            margin-right: 40px;
+        }
+        
+        input.submit {
+            color: white;
+            background-color: deeppink;
+            padding: 16px;
+            width: 80px;
+            border-radius: 4%;
+            border: none;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: .5rem .75rem;
+            font-style: italic;
+            font-family: inherit;
+            background-color: #eff3f7;
+            border: none;
