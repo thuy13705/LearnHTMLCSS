@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 footer {
     background-image: url(../images/footer-bg.jpg);
     background-size: cover;
@@ -5,7 +9,7 @@ footer {
 
 div.footer {
     background-position: center;
-    padding: 60px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -13,7 +17,7 @@ div.footer {
 div.footer .footer-right .container-icon {
     display: flex;
     flex-direction: row;
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 div.footer .footer-right .container-icon i {
@@ -24,10 +28,16 @@ div.footer .footer-right img {
     padding-bottom: 16px;
 }
 
+div.footer .footer-right {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 div.footer .footer-left .main-menu {
     display: flex;
     align-items: center;
     padding-bottom: 16px;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -36,38 +46,81 @@ ul {
 
 div.footer .footer-left .main-menu a {
     text-decoration-line: none;
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+div.footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu {
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 div.footer .footer-left .main-menu a:hover {
     color: deeppink;
 }
 
+#active {
+    color: deeppink;
+}
+
 div.footer .footer-left .copyright {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
-@media only screen and (max-width:992px) {
-    div.footer .footer-left .main-menu li {
-        padding-right: 32px;
+@media only screen and (max-width: 992px) {
+    .logo-footer {
+        justify-content: flex-start;
+    }
+    div.footer-left {
+        justify-content: flex-start;
+    }
+    ul.main-menu {
+        justify-content: flex-start;
+    }
+    .main-menu>li {
+        padding-right: 40px;
     }
 }
 
-@media only screen and(max-width:768px) {
-    div.footer-container {
-        display: flex;
-        flex-flow: column nowrap;
+@media only screen and (min-width: 992px) {
+    .logo-footer {
+        justify-content: flex-start;
+    }
+    div.footer-left {
+        justify-content: flex-end;
+    }
+    ul.main-menu {
+        justify-content: flex-end;
+    }
+    .main-menu>li {
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-footer {
         justify-content: center;
-        align-items: center;
+    }
+    div.footer .footer-right .container-icon {
+        display: flex;
+        flex-direction: row;
+        color: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+    }
+    .main-menu>li {
+        padding-left: 40px;
     }
 }
-
-@media only screen and (min-width:992px) {
-    div.footer .footer-left .main-menu li {
-        padding-left: 32px;
-    }
-}
-
-/* This is my change */
