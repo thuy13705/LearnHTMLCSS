@@ -4,7 +4,7 @@
     left: 0px;
     width: 80%;
     background-color: deeppink;
-    padding: 0 20px 8px 20px;
+    padding: 0 20px 20px 20px;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     color: white;
 }
