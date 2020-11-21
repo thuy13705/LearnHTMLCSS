@@ -1,0 +1,80 @@
+    .background-img {
+        height: 700px;
+        background-image: url(../images/single-big.jpg);
+        background-size: cover;
+    }
+    
+    .container-content {
+        align-items: center;
+        padding: 40px 15px;
+    }
+    
+    .title-recipedetail .title-box {
+        bottom: 10px;
+        left: 10px;
+        width: 200px;
+        color: white;
+        background-color: deeppink;
+        padding: 0 20px 8px 20px;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    }
+    
+    .ingredients .title-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        color: white;
+        background-color: deeppink;
+        padding: 0 20px 8px 20px;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    ul.list-star {
+        display: flex;
+    }
+    
+    .ingredients {
+        position: relative;
+        padding: 150px 50px 50px 50px;
+        background-color: #eff3f7;
+    }
+    
+    .detail-recipe {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .reciplt-detail-right {
+        display: inline-flex;
+        margin: 20px 0px;
+    }
+    
+    .text-ingre {
+        font-size: 1.5rem;
+    }
+    
+    i.far {
+        margin: 0px 4px;
+    }
+    
+    .ingre-detail {
+        display: flex;
+        margin: 20px 0px;
+    }
+    
+    span.text-list {
+        font-size: 50px;
+    }
+    
+    .yellow {
+        color: yellow;
+    }
+    
+    .white {
+        font-weight: 100;
+    }
