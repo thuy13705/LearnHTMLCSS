@@ -1,0 +1,85 @@
+div.top{
+    display: flex;
+    background-image: url(../images/page-top-bg.jpg);
+    height:230px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.top .button-about{
+    background-color: deeppink;
+    border-radius: 4%;
+}
+
+div.top .button-about h1{
+    padding: 16px;
+    font-size:40px;
+    color:white;
+}
+
+div.middle-bar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 10%;
+}
+
+div.middle-bar .content .text-tittle{
+    font-weight: bold;
+    font-size:32px;
+    padding:32px 0;
+}
+
+div.middle-bar .content .text-content{
+    padding:0px 0px 32px 0px;
+}
+
+div.middle-bar .content .button-about{
+    background-color: deeppink;
+    border-radius: 4%;
+    width:120px;
+}
+
+div.middle-bar .content .button-about p{
+    padding: 16px;
+    font-size:16px;
+    color:white;
+}
+
+div.image-content{
+    padding:32px 0px;
+}
+
+div.image-content img{
+    vertical-align: middle;
+    width: 100%;
+}
+div.bottom{
+    background-color: #eff3f7;
+    padding: 92px 32px;
+}
+
+div.bottom .bottom-bar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 10%;
+}
+
+div.bottom .bottom-bar .label{
+    align-items: center;
+    justify-content: center;
+}
+div.bottom .bottom-bar .label .number{
+    text-align: center;
+    padding:32px 0px;
+    font-weight: bold;
+}
+div.bottom .bottom-bar .label .kind{
+    text-align: center;
+}
+div.bottom .bottom-bar .label .label-logo{
+    text-align: center;
+}

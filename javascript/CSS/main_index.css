@@ -1,0 +1,256 @@
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.title {
+    text-align: center;
+    margin: 40px;
+}
+
+.top-animation {
+    align-items: center;
+}
+
+span.text {
+    padding: 8px 50px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+}
+
+.title1>span {
+    font-size: 52px;
+    background-color: deeppink;
+}
+
+.title2>span {
+    font-size: 36px;
+    background-color: rgb(241, 200, 15);
+}
+
+.title3>span {
+    background-color: rgb(85, 192, 35);
+}
+
+.zoom-in {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+
+.delay-half {
+    animation-delay: .5s;
+}
+
+.delay-one {
+    animation-delay: 1s;
+}
+
+p.title1 {
+    transform: rotate(3deg);
+}
+
+p.title2 {
+    transform: rotate(-5deg);
+}
+
+p.title3 {
+    transform: rotate(3deg);
+}
+
+.left-recipe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipes-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-recipe .images>img {
+    width: 100%;
+}
+
+.recipe-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.recipes-list .image-item>img {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    transition: .5s;
+}
+
+.hot-recipes {
+    background-color: rgb(233, 241, 255);
+    margin-top: 20px;
+}
+
+.image-item {
+    padding-right: 20px;
+}
+
+.date {
+    color: deeppink;
+    font-size: 14px;
+}
+
+.name {
+    margin-bottom: 26px;
+}
+
+.right-recipe .images {
+    margin-top: 20px;
+}
+
+.box-date {
+    position: absolute;
+    background-color: deeppink;
+    padding: 10px 10px;
+    top: 0;
+    left: 0;
+}
+
+.images p.date {
+    color: white;
+    font-size: 1.0rem;
+}
+
+.right-recipe {
+    margin-top: 55px;
+}
+
+.box-text {
+    background-color: white;
+    margin-top: 5px;
+}
+
+.title-review {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 20px 0 5px 20px;
+}
+
+.reviewer-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: deeppink;
+    padding: 0px 0 5px 20px;
+}
+
+.content-review {
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 20px 20px 5px 20px;
+    text-align: justify;
+}
+
+.comment {
+    font-size: 1.0rem;
+    padding: 20px 0 5px 20px;
+    font-weight: 600;
+}
+
+.box-text i {
+    border: 1px solid deeppink;
+    padding: 8px 12px;
+    background-color: deeppink;
+    color: white;
+    margin-top: 10px;
+    float: right;
+}
+
+.lastest-recipe {
+    background-color: rgb(248, 176, 42);
+    display: flex;
+    justify-content: space-around;
+}
+
+.lastest-recipe .recipe-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 20px;
+    padding-top: 20px;
+    width: 70%;
+    background-color: white;
+}
+
+.box-date p.date {
+    color: white;
+    font-size: 1.0rem;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    width: 200px;
+    height: 200px;
+}
+
+.recipe-item .content-box {
+    text-align: center;
+}
+
+.recipe-item .content-box .author>img {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+    margin: 0 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    span.text {
+        padding: 6px 40px;
+        font-size: 20px;
+    }
+    .title1>span {
+        font-size: 36px;
+    }
+    .title2>span {
+        font-size: 28px;
+    }
+    .lastest-recipe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .lastest-recipe .recipe-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .name {
+        margin-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .lastest-recipe .recipe-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .name {
+        margin-bottom: 16px;
+    }
+}
